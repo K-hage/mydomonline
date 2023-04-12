@@ -3,15 +3,6 @@ from rest_framework import serializers
 from core.models import Property, Entity
 
 
-class PropertiesSerializers(serializers.ModelSerializer):
-    class Meta:
-        model = Property
-        fields = '__all__'
-        read_only_fields = (
-            'id',
-        )
-
-
 class EntitySerializer(serializers.ModelSerializer):
     value = serializers.IntegerField(
         label='Значение',
