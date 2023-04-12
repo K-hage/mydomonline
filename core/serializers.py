@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from core.models import Property, Entity
+from core.models import Entity
 
 
 class EntitySerializer(serializers.ModelSerializer):
